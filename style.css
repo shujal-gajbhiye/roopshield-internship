@@ -1,0 +1,122 @@
+/* ==========================================
+   BASE STYLES (Desktop & general defaults)
+   ========================================== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #dbeafe, #bfdbfe, #93c5fd);
+    color: #0f172a;
+}
+
+nav {
+    background: #1a202c;
+    padding: 15px 30px;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+nav a.active {
+    color: #63b3ed;
+    border-bottom: 2px solid #63b3ed;
+}
+
+.hero,
+.content {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact page grid layout */
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+/* RESPONSIVE HEADINGS: Uses clamp() to auto-scale font size dynamically */
+h1 {
+    color: #0f172a;
+    font-size: clamp(2rem, 5vw, 3rem); /* Minimum 2rem, scales with view width, maximum 3rem */
+    text-shadow: 2px 2px 8px rgba(30, 64, 175, 0.4);
+    grid-column: 1 / -1; 
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.content p {
+    grid-column: 1 / -1; 
+}
+
+a {
+    color: #2563eb;
+}
+
+/* Contact Box Cards */
+.contact-box {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    word-wrap: break-word; 
+}
+
+.contact-box h3 {
+    color: #1e40af;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.contact-box a {
+    font-size: 1.05rem;
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.contact-box p {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #334155;
+}
+
+
+/* ==========================================
+   MEDIA QUERIES (Mobile & Tablet Breakpoints)
+   ========================================== */
+
+/* Triggers when the screen width is 768px or smaller */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stacks navigation links vertically on mobile */
+        align-items: center;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    nav a {
+        padding-bottom: 2px;
+    }
+
+    .hero,
+    .content {
+        margin: 20px 16px; /* Adds 16px side margins so boxes don't touch screen edges */
+        padding: 25px 20px; /* Reduces inner spacing so text looks comfortable on mobile */
+    }
+}
