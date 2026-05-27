@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow To-Do List with Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <div class="todo-container">
+        <div class="datetime-header">
+            <div id="liveTime">00:00:00 AM</div>
+            <div id="liveDate">Loading date...</div>
+        </div>
+
+        <h2>Task Scheduler</h2>
+        
+        <div class="input-form">
+            <input type="text" id="taskInput" placeholder="What's your plan?">
+            
+            <div class="scheduler-row">
+                <input type="date" id="taskDate">
+                <input type="time" id="taskTime">
+            </div>
+
+            <button id="addBtn">Add Task</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+</body>
+</html>
