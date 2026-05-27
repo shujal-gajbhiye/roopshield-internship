@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9: Fetch & Display API Data</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <div class="page-container">
+        <h1 class="page-title">Latest API Posts</h1>
+        
+        <div id="loading" class="loading-container">
+            <div class="spinner"></div>
+            <p>Fetching data from API...</p>
+        </div>
+
+        <main id="postsGrid" class="posts-grid"></main>
+    </div>
+
+    <div id="postModal" class="modal-overlay">
+        <div class="modal-card">
+            <span id="modalId" class="post-id"></span>
+            <h2 id="modalTitle" class="post-title"></h2>
+            <p id="modalBody" class="post-body"></p>
+            <button id="closeModalBtn" class="close-btn">Close Post</button>
+        </div>
+    </div>
+
+</body>
+</html>
