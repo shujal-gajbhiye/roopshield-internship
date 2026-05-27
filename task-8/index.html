@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8: CSS Card Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <h1 class="page-title">Explore Our Tracks</h1>
+        
+        <main class="cards-grid">
+            
+            <article class="card">
+                <div class="card-image-wrapper">
+                    <img src="https://placehold.co/600x400/2563eb/ffffff?text=Frontend" alt="Frontend Course" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Frontend Dev</h2>
+                    <p class="card-description">Master modern UI engineering with HTML, CSS architectures, responsive layouts, and modern single-page framework lifecycles.</p>
+                    <button class="card-btn">Enroll Track</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image-wrapper">
+                    <img src="https://placehold.co/600x400/16a34a/ffffff?text=Backend" alt="Backend Course" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Backend Architecture</h2>
+                    <p class="card-description">Build highly scalable enterprise microservices, robust API integrations, optimal database structures, and secure query streams.</p>
+                    <button class="card-btn">Enroll Track</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image-wrapper">
+                    <img src="https://placehold.co/600x400/9333ea/ffffff?text=DevOps" alt="DevOps Course" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Cloud DevOps</h2>
+                    <p class="card-description">Automate deployment layers with CI/CD engines, orchestration container structures, cloud infrastructure routing, and telemetry charts.</p>
+                    <button class="card-btn">Enroll Track</button>
+                </div>
+            </article>
+
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.card-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                this.textContent = 'Enrolled! ✓';
+                this.style.background = '#16a34a';
+            });
+        });
+    </script>
+
+</body>
+</html>
