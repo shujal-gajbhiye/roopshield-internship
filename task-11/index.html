@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11: Mini Portfolio Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <header class="portfolio-header">
+        <div class="header-container">
+            <h1 class="dev-name">Shujal Gajbhiye</h1>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </nav>
+            <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">
+                <svg class="sun-icon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 2.293a1 1 0 011.414 0l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 010-1.414zm4.293 4.293a1 1 0 010 1.414l-1 1a1 1 0 11-1.414-1.414l1-1a1 1 0 011.414 0zM11 16v1a1 1 0 11-2 0v-1a1 1 0 112 0zm3.172-1.172a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM4.293 4.293a1 1 0 011.414 0l1 1a1 1 0 11-1.414 1.414l-1-1a1 1 0 010-1.414zM2 10a1 1 0 011-1h1a1 1 0 110 2H3a1 1 0 01-1-1zm2.293 4.293a1 1 0 010-1.414l1-1a1 1 0 111.414 1.414l-1 1a1 1 0 01-1.414 0zM10 5a5 5 0 100 10 5 5 0 000-10z"></path></svg>
+                <svg class="moon-icon" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="portfolio-container">
+
+        <section id="about" class="portfolio-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-card">
+                <p>Hello! I am a passionate Developer intern building responsive web applications, object-oriented systems, and interactive digital architectures. Focused on constructing clean, modern, and high-performance engineering solutions across frontend technologies and game development pipelines.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="portfolio-section">
+            <h2 class="section-title">Core Competencies</h2>
+            
+            <h3 class="skills-subtitle">Web Development</h3>
+            <div class="skills-grid spacing-bottom">
+                <span class="skill-tag">HTML5 Layouts</span>
+                <span class="skill-tag">CSS3 Grid & Flexbox</span>
+                <span class="skill-tag">Asynchronous JavaScript</span>
+                <span class="skill-tag">DOM Engineering & APIs</span>
+            </div>
+
+            <h3 class="skills-subtitle">Software & Game Engineering</h3>
+            <div class="skills-grid">
+                <span class="skill-tag">Python Scripting</span>
+                <span class="skill-tag">Godot Engine</span>
+                <span class="skill-tag">Unity Engine</span>
+                <span class="skill-tag">Git & Version Control</span>
+            </div>
+        </section>
+
+        <section id="projects" class="portfolio-section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-header block-blue">
+                        <h3>CSS Tracks Layout</h3>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Task 8</span>
+                        <p>A fully responsive multi-card structure displaying technical tracks using modern advanced CSS grid templates and hover scalar effects.</p>
+                        <a href="../task-8/index.html" class="project-link">View Component</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header block-green">
+                        <h3>Asynchronous API Engine</h3>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Task 9</span>
+                        <p>Asynchronously fetches REST structural posts from a remote server with a custom CSS loading element, micro-data rendering, and active overlay modal viewport cards.</p>
+                        <a href="../task-9/index.html" class="project-link">View Component</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header block-purple">
+                        <h3>Filterable Photo Matrix</h3>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Task 10</span>
+                        <p>An interactive, categorizable element showcase matrix utilizing custom dataset bindings to seamlessly toggle visibility domains across discrete topics.</p>
+                        <a href="../task-10/index.html" class="project-link">View Component</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="portfolio-footer">
+        <p>&copy; 2026 Shujal Gajbhiye. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/shujal-gajbhiye" target="_blank">GitHub</a>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">Email Contact</a>
+        </div>
+    </footer>
+
+</body>
+</html>
